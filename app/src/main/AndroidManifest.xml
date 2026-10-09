@@ -12,14 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Baitaplap">
 
-        <!-- Màn hình Lab 1 (Form đăng ký) -->
+        <!-- Màn hình Lab 1 -->
         <activity
-            android:name="com.example.baitaplap.Lab1Activity"
+            android:name=".Lab1Activity"
             android:exported="false" />
 
-        <!-- Màn hình Lab 2 (Danh sách sinh viên Compose) - Chạy chính -->
+        <!-- Màn hình Lab 2 (MÀN HÌNH CHÍNH KHỞI CHẠY) -->
         <activity
-            android:name="com.example.baitaplap.Lab2Activity"
+            android:name=".Lab2Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,9 +27,24 @@
             </intent-filter>
         </activity>
 
+        <!-- Màn hình Lab 3 (Chi tiết sinh viên) -->
+        <activity
+            android:name=".Lab3DetailActivity"
+            android:exported="false" />
+
+        <!-- Màn hình Lab 4 (Theme & Dark Mode) -->
+        <activity
+            android:name=".Lab4ThemeActivity"
+            android:exported="false" />
+
+        <!-- Màn hình Lab 5 (UI State) -->
+        <activity
+            android:name=".Lab5UiStateActivity"
+            android:exported="false" />
+
         <!-- Màn hình MainActivity -->
         <activity
-            android:name="com.example.baitaplap.MainActivity"
+            android:name=".MainActivity"
             android:exported="false" />
 
     </application>
